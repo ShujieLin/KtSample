@@ -6,7 +6,7 @@ package com.shujie.base.lambda
  * @date: 2022/12/5
  * @author: linshujie
  */
-class lambda01 {
+class Lambda01 {
 }
 
 fun main() {
@@ -87,7 +87,25 @@ fun main() {
     //给Int添加匿名函数
     val method19: Int.(Int) -> String = { "${this + it}" }
     println(1.method19(1))
-    println(method19(1,1))
+    println(method19(1, 1))
+
+    val method20: Double.(Double, Double) -> Unit = { d1, d2 ->
+        println("${this + d1 + d2}")
+    }
+    method20.invoke(1.1, 1.2, 1.3)
+    1.1.method20(1.2, 1.3)
+
+    val method21: Char.(String) -> Unit = {
+        println(
+            if (this == '男')
+                "man!"
+            else if (this == '女')
+                "woman!"
+            else it
+        )
+    }
+    '男'.method21("unknown")
+    'a'.method21("unknown")
 }
 
 /**
