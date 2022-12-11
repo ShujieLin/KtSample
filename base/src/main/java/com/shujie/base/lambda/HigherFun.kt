@@ -16,6 +16,7 @@ fun main() {
     println(fun0(1,1))
     println(fun1(1,1)("lin","shujie"))
 }
+
 val fun0 = fun(n1: Int, n2: Int)//fun0函数
         : String
         = "shujie"
