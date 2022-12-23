@@ -16,3 +16,4 @@ rootProject.name = "KtSample"
 include ':app'
 include ':delegate'
 include ':base'
+include ':coroutine'

@@ -6,3 +6,7 @@ package com.shujie.delegate
  */
 class Simple3 {
 }
+
+fun main() {
+    println("hello")
+}
